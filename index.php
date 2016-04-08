@@ -11,14 +11,24 @@
      		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	</head>
 	<body>
+	<div class="row">
+    <div class="col s12">
+    <div class="card-panel teal lighten-2">
 		<header>
-			<form action="" method="post">
+		<form class="col s12">
+      	<div class="row">
+        <div class="input-field col s6">
+          	<input  id="first_name" type="text" class="validate" name="username" required>
+          	<label for="first_name">First Name</label>
+        </div>
+<!--			<form action="" method="post">
 				Username : 
 				<input type="text" name="username" required>
 				Password :
 				<input type="password" name="password" required>
 				<input type="submit" value="Login" name="login" />
 			</form>
+-->
 				<?php
 					if(isset($_POST["login"]))
 					{
@@ -41,6 +51,9 @@
 			        }
 			    ?>
 		</header>
+		</div>
+		</div>
+		</div>
 		<section>
 			<form action="" method="post">
 				Username : 
