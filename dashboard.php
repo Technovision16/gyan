@@ -11,10 +11,44 @@
      		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	</head>
 	<body>
-		<header>
-		</header>
-		<section>
-		</section>
+		<?php
+          if(!$_COOKIE['username'])
+          	  {
+          	  	header('Location: index.php');
+          	  }
+		?>
+		<div class="row">
+			<div class="col s2">
+				<!--list-->
+				<a href="#">1. a</a><br>
+				<a href="#">2. a</a><br>
+				<a href="#">3. a</a><br>
+				<a href="#">4. a</a><br>
+				<a href="#">5. a</a><br>
+				<a href="#">6. a</a><br>
+				<a href="#">7. a</a><br>
+				<a href="#">8. a</a><br>
+				<a href="#">9. a</a><br>
+				<a href="#">10. a</a><br>
+				<a href="#">1. a</a><br>
+				<a href="#">1. a</a><br>
+				<a href="#">1. a</a><br>
+				<a href="#">1. a</a><br>
+				<a href="#">1. a</a><br>
+
+			</div>
+			<div class="col s8">
+				<div>
+					<!--data of user-->
+				</div>
+				<div>
+					<!--contents-->
+				</div>
+			</div>
+			<div class="col s2">
+				<!--progress bar-->
+			</div>
+		</div>
 	<footer>
 	</footer>
 		<!--Import jQuery before materialize.js-->

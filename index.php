@@ -11,16 +11,19 @@
      		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	</head>
 	<body>
+		<header>
 	<div class="row">
     <div class="col s12">
     <div class="card-panel teal lighten-2">
-		<header>
 		<form class="col s12">
       	<div class="row">
         <div class="input-field col s6">
           	<input  id="first_name" type="text" class="validate" name="username" required>
           	<label for="first_name">First Name</label>
         </div>
+        </div>
+        </form>
+
 <!--			<form action="" method="post">
 				Username : 
 				<input type="text" name="username" required>
@@ -50,10 +53,10 @@
 			          	}
 			        }
 			    ?>
+		</div>
+		</div>
+		</div>
 		</header>
-		</div>
-		</div>
-		</div>
 		<section>
 			<form action="" method="post">
 				Username : 
@@ -73,6 +76,8 @@
 				<input type="date" name="dob" required /><br>
 				Mobile:
 				<input type="number" name="mobile" required />
+				Adhaar:
+				<input type="number" name="adhaar" required />
 				<input type="submit" value="Register" name="register" />
 			</form>
 				<?php
@@ -88,6 +93,7 @@
 		          		$gender = $_POST["gender"];
 		          		$dob = $_POST["dob"];
 		          		$mobile = $_POST["mobile"];		          		
+		          		$adhaar = $_POST["adhaar"];
 		          		$sql = "SELECT * FROM gyanuser WHERE (username= '$username')";
 		          		$data = mysql_query($sql);
 		          		$count = mysql_num_rows($data);
@@ -97,7 +103,7 @@
 			          	}
 			          	else
 			          	{
-			          		$result = mysql_query("INSERT INTO gyanuser VALUES ('$username','$password','$name','$location','$age','$gender','$dob','$mobile')");
+			          		$result = mysql_query("INSERT INTO gyanuser VALUES ('$username','$password','$name','$location','$age','$gender','$dob','$mobile','$adhaar')");
 			          		if($result)
 			          		{
 			          			echo "Registration Successful";
@@ -112,6 +118,7 @@
 			<a>Register as Faculty</a>
 		</section>
 	<footer>
+		Padho Likho Jiyo
 	</footer>
 		<!--Import jQuery before materialize.js-->
      	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
