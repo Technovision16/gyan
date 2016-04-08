@@ -23,7 +23,9 @@
         </div>
         </div>
         </form>
-
+		</div>
+		</div>
+		</div>
 <!--			<form action="" method="post">
 				Username : 
 				<input type="text" name="username" required>
@@ -53,12 +55,68 @@
 			          	}
 			        }
 			    ?>
-		</div>
-		</div>
-		</div>
 		</header>
-		<section>
-			<form action="" method="post">
+		<section style="float: right;">
+		<span class="blue-text text-darken-2">Sign Up</span>
+			<div class="row">
+    			<form action="" method="post" class="col s12">
+       				<div class="row">
+        			<div class="input-field col s6">
+          				<input  id="first_name" type="text" class="validate" name="username" required>
+          				<label for="first_name">Username</label>
+        			</div>
+        			</div>
+        			<div class="row">
+        			<div class="input-field col s6">
+          				<input id="last_name" type="password" class="validate" name="password" required>
+         				<label for="last_name">Password</label>
+       				</div>
+      				</div>
+      				<div class="row">
+        			<div class="input-field col s6">
+          				<input id="text" type="text" class="validate" name="name" required>
+         				<label for="text">Name</label>
+       				</div>
+      				</div>
+      				<div class="row">
+        			<div class="input-field col s6">
+          				<input id="text" type="text" class="validate" name="location" required>
+         				<label for="text">Location</label>
+       				</div>
+      				</div>
+      				<div class="row">
+        			<div class="input-field col s6">
+          				<input id="number" type="text" class="validate" name="age" required>
+         				<label for="number">Age</label>
+       				</div>
+      				</div>
+      				<div class="row">
+        			<div class="input-field col s6">
+          				<input id="date" type="date" class="validate" name="dob" required>
+       				</div>
+      				</div>
+      				<p>Gender</p>      				
+      				<p>
+     					<input type="radio" id="test1" name="gender" value="M"/>
+      					<label for="test1">Male</label>
+    				</p>
+    				<p>
+      					<input  type="radio" id="test2" name="gender" value="F"/>
+      					<label for="test2">Female</label>
+   					</p>
+   					<div class="input-field col s6">
+          				<input id="number" type="text" class="validate" name="mobile" required>
+         				<label for="number">Mobile</label>
+       				</div><br>
+       				<div class="row">
+        				<button class="btn waves-effect waves-light" type="submit" value="Register" name="register">Register
+    					<i class="material-icons right">send</i>
+  						</button>
+      				</div>
+      				</form>
+      			</div>
+		<!--	<form action="" method="post">
+>>>>>>> origin/master
 				Username : 
 				<input type="text" name="username" required /><br>
 				Password :
@@ -79,7 +137,7 @@
 				Adhaar:
 				<input type="number" name="adhaar" required />
 				<input type="submit" value="Register" name="register" />
-			</form>
+			</form>-->
 				<?php
 					if(isset($_POST["register"]))
 					{
