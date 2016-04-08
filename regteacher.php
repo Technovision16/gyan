@@ -60,6 +60,26 @@
 				<input type="date" name="dob" required /><br>
 				Mobile:
 				<input type="number" name="mobile" required />
+				<p>
+			      <input type="checkbox" id="test1" />
+			      <label for="test1">Red</label>
+			    </p>
+			    <p>
+			      <input type="checkbox" id="test2" />
+			      <label for="test2">Yellow</label>
+			    </p>
+			    <p>
+			      <input type="checkbox" id="test3" />
+			      <label for="test3">Fill</label>
+			    </p>
+			    <p>
+			      <input type="checkbox" id="test4" />
+			      <label for="test4">Green</label>
+			    </p>
+			      <p>
+			        <input type="checkbox" id="test5" />
+			        <label for="test5">Brown</label>
+			    </p>
 				<input type="submit" value="Register" name="register" />
 			</form>
 				<?php
@@ -96,7 +116,7 @@
 			          	}
 		          	}
 				?>
-			<a href="regteacher.php">Register as Faculty</a>
+			<a href="index.php">Register as Student</a>
 		</section>
 	<footer>
 	</footer>

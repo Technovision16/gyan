@@ -96,7 +96,7 @@
 			          	}
 		          	}
 				?>
-			<a href="regteacher.php">Register as Faculty</a>
+			<a>Register as Faculty</a>
 		</section>
 	<footer>
 	</footer>
