@@ -10,30 +10,114 @@
 			<!--Let browser know website is optimized for mobile-->
      		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	</head>
-	<body>
+	<body class="black white-text">
 		<header>
-	<div class="row">
-    <div class="col s12">
-    <div class="card-panel teal lighten-2">
-		<form class="col s12">
-      	<div class="row">
-        <div class="input-field col s6">
-          	<input  id="first_name" type="text" class="validate" name="username" required>
-          	<label for="first_name">First Name</label>
-        </div>
-        </div>
-        </form>
-		</div>
-		</div>
-		</div>
-<!--			<form action="" method="post">
-				Username : 
-				<input type="text" name="username" required>
-				Password :
-				<input type="password" name="password" required>
-				<input type="submit" value="Login" name="login" />
-			</form>
--->
+			<nav style="position:fixed;" class="grey">
+			    <div class="nav-wrapper">
+			      <a class="brand-logo center">GYAAN</a>
+			    </div>
+			</nav>
+			  <br><br><br>
+			  <div class="row">
+				  <div class="col s8">
+				  <br><br><br>
+					 <div class="slider">
+					    <ul class="slides">
+					      <li>
+					        <img src="http://lorempixel.com/580/250/nature/1"> <!-- random image -->
+					        <div class="caption center-align">
+					          <h3>Education For All</h3>
+					          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+					        </div>
+					      </li>
+					      <li>
+					        <img src="http://lorempixel.com/580/250/nature/2"> <!-- random image -->
+					        <div class="caption left-align">
+					          <h3>Left Aligned Caption</h3>
+					          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+					        </div>
+					      </li>
+					      <li>
+					        <img src="http://lorempixel.com/580/250/nature/3"> <!-- random image -->
+					        <div class="caption right-align">
+					          <h3>Right Aligned Caption</h3>
+					          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+					        </div>
+					      </li>
+					      <li>
+					        <img src="http://lorempixel.com/580/250/nature/4"> <!-- random image -->
+					        <div class="caption center-align">
+					          <h3>This is our big Tagline!</h3>
+					          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+					        </div>
+					      </li>
+					    </ul>
+					  </div></div><br>
+			  		<span>Login</span>
+       					<div class="col s4">
+			  			<form class="white-text" style="size:10px; padding:0px 0px 0px 0px;" action="" method="post">
+							Username : 
+							<input type="text" name="username" required><br>
+							Password :
+							<input type="password" name="password" required>
+							<input type="submit" value="Login" name="login">
+						</form>
+   					<form action="" method="post">
+       									<span class="blue-text text-darken-2">Sign Up</span>
+       									<br>
+		        			<div class="input-field ">
+		          				<input  id="first_name" type="text" class="validate" name="username" required>
+		          				<label for="first_name">Username</label>
+		        			</div><br>
+		        			<div class="input-field ">
+		          				<input id="last_name" type="password" class="validate" name="password" required>
+		         				<label for="last_name">Password</label>
+		       				</div><br>
+		      				<div class="row">
+		        			<div class="input-field ">
+		          				<input id="text" type="text" class="validate" name="name" required>
+		         				<label for="text">Name</label>
+		       				</div>
+		      				</div>
+		      				<div class="row">
+		        			<div class="input-field ">
+		          				<input id="text" type="text" class="validate" name="location" required>
+		         				<label for="text">Location</label>
+		       				</div>
+		      				</div>
+		      				<div class="row">
+		        			<div class="input-field ">
+		          				<input id="number" type="text" class="validate" name="age" required>
+		         				<label for="number">Age</label>
+		       				</div>
+		      				</div>
+		      				<div class="row">
+		        			<div class="input-field ">
+		          				<input id="date" type="date" class="validate" name="dob" required>
+		       				</div>
+		      				</div>
+		      				<p>Gender</p>      				
+		      				<p>
+		     					<input type="radio" id="test1" name="gender" value="M"/>
+		      					<label for="test1">Male</label>
+		    				</p>
+		    				<p>
+		      					<input  type="radio" id="test2" name="gender" value="F"/>
+		      					<label for="test2">Female</label>
+		   					</p>
+		   					<div class="input-field col s6">
+		          				<input id="number" type="text" class="validate" name="mobile" required>
+		         				<label for="number">Mobile</label>
+		       				</div><br>
+		       				<div class="row">
+		        				<button class="btn waves-effect waves-light" type="submit" value="Register" name="register">Register
+		    					<i class="material-icons right">send</i>
+		  						</button>
+		      				</div>
+      				</form>
+      			</div>
+				</div>
+			</div>
 				<?php
 					if(isset($_POST["login"]))
 					{
@@ -55,89 +139,10 @@
 			          	}
 			        }
 			    ?>
-		</header>
-		<section style="float: right;">
-		<span class="blue-text text-darken-2">Sign Up</span>
-			<div class="row">
-    			<form action="" method="post" class="col s12">
-       				<div class="row">
-        			<div class="input-field col s6">
-          				<input  id="first_name" type="text" class="validate" name="username" required>
-          				<label for="first_name">Username</label>
-        			</div>
-        			</div>
-        			<div class="row">
-        			<div class="input-field col s6">
-          				<input id="last_name" type="password" class="validate" name="password" required>
-         				<label for="last_name">Password</label>
-       				</div>
-      				</div>
-      				<div class="row">
-        			<div class="input-field col s6">
-          				<input id="text" type="text" class="validate" name="name" required>
-         				<label for="text">Name</label>
-       				</div>
-      				</div>
-      				<div class="row">
-        			<div class="input-field col s6">
-          				<input id="text" type="text" class="validate" name="location" required>
-         				<label for="text">Location</label>
-       				</div>
-      				</div>
-      				<div class="row">
-        			<div class="input-field col s6">
-          				<input id="number" type="text" class="validate" name="age" required>
-         				<label for="number">Age</label>
-       				</div>
-      				</div>
-      				<div class="row">
-        			<div class="input-field col s6">
-          				<input id="date" type="date" class="validate" name="dob" required>
-       				</div>
-      				</div>
-      				<p>Gender</p>      				
-      				<p>
-     					<input type="radio" id="test1" name="gender" value="M"/>
-      					<label for="test1">Male</label>
-    				</p>
-    				<p>
-      					<input  type="radio" id="test2" name="gender" value="F"/>
-      					<label for="test2">Female</label>
-   					</p>
-   					<div class="input-field col s6">
-          				<input id="number" type="text" class="validate" name="mobile" required>
-         				<label for="number">Mobile</label>
-       				</div><br>
-       				<div class="row">
-        				<button class="btn waves-effect waves-light" type="submit" value="Register" name="register">Register
-    					<i class="material-icons right">send</i>
-  						</button>
-      				</div>
-      				</form>
-      			</div>
-		<!--	<form action="" method="post">
->>>>>>> origin/master
-				Username : 
-				<input type="text" name="username" required /><br>
-				Password :
-				<input type="password" name="password" required /><br>
-				Name:
-				<input type="text" name="name" required /><br>
-				Location:
-				<input type="text" name="location" required /><br>
-				Age:
-				<input type="number" name="age" required /><br>
-				Gender:<br>
-    			<input type="radio" name="gender" value="M">M<br>
-    			<input type="radio" name="gender" value="F">F<br>
-				DOB:
-				<input type="date" name="dob" required /><br>
-				Mobile:
-				<input type="number" name="mobile" required />
-				Adhaar:
-				<input type="number" name="adhaar" required />
-				<input type="submit" value="Register" name="register" />
-			</form>-->
+		</header><br>
+		<section >
+
+		<!--	<form action="" method="post">-->
 				<?php
 					if(isset($_POST["register"]))
 					{
@@ -175,7 +180,7 @@
 				?>
 			<a>Register as Faculty</a>
 		</section>
-	<footer>
+	<footer class="footer-fixed center" style="position:fixed; bottom:0px; width:100%; height:30px;">
 		Padho Likho Jiyo
 	</footer>
 		<!--Import jQuery before materialize.js-->
