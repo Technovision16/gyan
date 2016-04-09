@@ -12,7 +12,7 @@
 	</head>
 	<body>
 		<?php
-          if(!$_COOKIE['username'])
+          if(!isset($_COOKIE['username']))	
           	  {
           	  	header('Location: index.php');
           	  }
