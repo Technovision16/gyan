@@ -82,28 +82,28 @@
 					        <img src="http://lorempixel.com/580/250/nature/1"> <!-- random image -->
 					        <div class="caption center-align">
 					          <h3>Education For All</h3>
-					          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+					          <h5 class="light grey-text text-lighten-3"></h5>
 					        </div>
 					      </li>
 					      <li>
 					        <img src="http://lorempixel.com/580/250/nature/2"> <!-- random image -->
 					        <div class="caption left-align">
-					          <h3>Left Aligned Caption</h3>
-					          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+					          <h3>Improve our nation, focus on education</h3>
+					          <h5 class="light grey-text text-lighten-3"></h5>
 					        </div>
 					      </li>
 					      <li>
 					        <img src="http://lorempixel.com/580/250/nature/3"> <!-- random image -->
 					        <div class="caption right-align">
-					          <h3>Right Aligned Caption</h3>
-					          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+					          <h3>Learn things you didn’t know, expand your horizons, help your brain grow</h3>
+					          <h5 class="light grey-text text-lighten-3">help your brain grow.</h5>
 					        </div>
 					      </li>
 					      <li>
 					        <img src="http://lorempixel.com/580/250/nature/4"> <!-- random image -->
 					        <div class="caption center-align">
-					          <h3>This is our big Tagline!</h3>
-					          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+					          <h3>Let our future be full of joy, educate every girl and boy!</h3>
+					          <h5 class="light grey-text text-lighten-3">A good education is a sensation</h5>
 					        </div>
 					      </li>
 					    </ul>
