@@ -115,7 +115,9 @@
 							<input type="text" name="username" required><br>
 							Password :
 							<input type="password" name="password" required>
-							<input type="submit" value="Login" name="login">
+		        				<button class="btn waves-effect waves-light" type="submit" value="Login" name="login">Login
+		    					<i class="material-icons right">send</i>
+		  						</button>
 						</form>
    					<form action="" method="post">
        									<span class="blue-text text-darken-2">Sign Up</span>
@@ -160,14 +162,14 @@
 		      					<input  type="radio" id="test2" name="gender" value="F"/>
 		      					<label for="test2">Female</label>
 		   					</p>
-		   					<div class="input-field col s6">
+		   					<div>
 		          				<input id="number" type="text" class="validate" name="mobile" required>
 		         				<label for="number">Mobile</label>
-		       				</div><br>
-		   					<div class="input-field col s6">
+		       				</div>
+		   					<div>
 		          				<input id="number" type="text" class="validate" name="adhaar" required>
 		         				<label for="number">Adhaar</label>
-		       				</div><br>
+		       				</div>
 		       				<div class="row">
 		        				<button class="btn waves-effect waves-light" type="submit" value="Register" name="register">Register
 		    					<i class="material-icons right">send</i>

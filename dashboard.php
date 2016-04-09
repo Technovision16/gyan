@@ -16,7 +16,17 @@
           	  {
           	  	header('Location: index.php');
           	  }
+          if(isset($_POST["logout"]))
+          {
+			 	setcookie("username",'', time() + (86400 * 30), "/");
+				header("Location: index.php");
+          }
 		?>
+		<form method="POST" action="">
+			<div class="right"><button class="btn waves-effect waves-light" type="logout" name="logout">Logout
+	            <i class="material-icons right"></i></div>
+		</form>
+
 		<div class="row">
 			<div class="col s2">
 				<!--list-->
